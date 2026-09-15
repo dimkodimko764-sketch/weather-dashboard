@@ -1,19 +1,50 @@
-<!DOCTYPE <html>
+<!DOCTYPE html>
     <html lang = "uk">
     <head>
-        <meta charset = "UFT-8">
+        <meta charset = "UTF-8">
             <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-                <title>Погодний дашборд<title>
+                <title>Погодний дашборд</title>
                     <link rel = "stylesheet" href="css/style.css">
     </head> 
 
     <body>
-    <!--шапка з назвою застосунку та полем пошуку міста-->
-    <!--блок поточної погоди-->
-    <!--блок прогнозу на кілька днів-->
-    <!--підвал із джерелом даних-->
-
-        <script scp = "js/app.js"></script>
-        </script>
+    <header>
+        <h1>Погодний дашборд</h1>
+        <nav>
+        <a href="#current">Поточна погода</a>
+        <a href="#forecast">Прогноз</a>
+        </nav>
+    </header>
+    <main>
+        <section id = "current">
+            <h2>Поточна погода</h2>
+            <img src="assets/img/sunny.jpg" alt="Сонячно, без опадів" width="100">
+            <p>+21°C, ясно</p>
+        </section>
+        <section id = "forecast">
+           <h2>Прогноз на тиждень</h2>
+            <article>
+                    <h3>Вівторок</h3>
+                    <p>+18°C; хмарно</p>
+                </article>
+                <article>
+                    <h3>Середа</h3>
+                    <p>+16°C; дощ</p>
+                </article>
+                <article>
+                    <h3>Четверг</h3>
+                    <p>+20°C; ясно</p>
+                </article>
+                <article>
+                    <h3>П'ятниця</h3>
+                    <p>+20°C; ясно</p>
+                </article>
+            </section>
+    </main>
+    
+    <footer>
+        <p>Дані надані навчальним прикладом. &copy; 2026</p>
+    </footer>
+        <script src = "js/app.js"></script>
     </body>
 </html>
