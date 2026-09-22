@@ -1,0 +1,58 @@
+::before, ::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    line-heigt: 1.5;
+    color: #0de51b;
+    background: #389b64;
+}
+
+header {
+    backgroud: #3a1283;
+    padding: 24px;
+    color: #bec8c3;
+}
+
+header h1 { 
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav a {
+    color: #0ca9d8;
+    margin-rigth: 20;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 14px;
+
+}
+
+section{
+    margin-bottom: 3rem;
+}
+
+.weekend_day{
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #0f1210;
+    margin-bottom: 15px;
+    backgroud: #9e1dc9;
+}
+
+.temperature{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer{
+    front-size: 1rem;
+    padding: 10;
+    color: #7ccb1b;
+}
