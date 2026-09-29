@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 2rem;
     line-heigt: 1.5;
     color: #0de51b;
     background: #389b64;
@@ -15,6 +15,11 @@ header {
     backgroud: #3a1283;
     padding: 24px;
     color: #bec8c3;
+    display: flex;
+    justify-content: space-between;
+    aling-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 header h1 { 
@@ -55,4 +60,36 @@ section{
     front-size: 1rem;
     padding: 10;
     color: #7ccb1b;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    .current-layout{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }

@@ -16,30 +16,57 @@
         </nav>
     </header>
     <main>
-        <section id = "current">
+         <div class="current-layout">
+
+        <section id="current">
             <h2>Поточна погода</h2>
-            <img src="assets/img/sunny.jpg" alt="Сонячно, без опадів" width="100">
-            <p>+21°C, ясно</p>
+            <img id="weather-image"
+                 src="assets/img/sunny.jpg"
+                 alt="Сонячно, без опадів"
+                 width="100">
+
+            <p id="current-weather">+21°C, ясно</p>
         </section>
-        <section id = "forecast">
-           <h2>Прогноз на тиждень</h2>
-            <article class = "weekend_day">
-                    <h3>Вівторок</h3>
-                    <p class = "temperature_huminity">+18°C; хмарно</p>
-                </article>
-                <article class = "weekend_day">
-                    <h3>Середа</h3>
-                    <p class = "temperature_huminity">+16°C; дощ</p>
-                </article>
-                <article class = "weekend_day">
-                    <h3>Четвер</h3>
-                    <p class = "temperature_huminity">+20°C; ясно</p>
-                </article>
-                <article class = "weekend_day">
-                    <h3>П'ятниця</h3>
-                    <p class = "temperature_huminity">+20°C; ясно</p>
-                </article>
-            </section>
+         <aside>
+            <h2>Що бажано вдягнути</h2>
+            <p>Легка куртка або сорочка</p>
+        </aside>
+           </div>
+           <section id="forecast">
+        <h2>Прогноз на тиждень</h2>
+
+    <div class="cards">
+    <article class="weekend_day">
+    <h3>Понеділок</h3>
+    <p class="temperature_huminity">+18°C; помірно</p>
+    </article>
+    <article class="weekend_day">
+    <h3>Вівторок</h3>
+    <p class="temperature_huminity">+17°C; хмарно</p>
+    </article>
+    <article class="weekend_day">
+    <h3>Середа</h3>
+    <p class="temperature_huminity">+20°C; хмарно</p>
+    </article>
+    <article class="weekend_day">
+    <h3>Четверг</h3>
+    <p class="temperature_huminity">+21°C; ясно</p>
+    </article>
+    <article class="weekend_day">
+    <h3>П'ятниця</h3>
+    <p class="temperature_huminity">+22°C; ясно</p>
+    </article>
+    <article class="weekend_day">
+    <h3>Субота</h3>
+    <p class="temperature_huminity">+20°C; ясно</p>
+    </article>
+    <article class="weekend_day">
+    <h3>Неділя</h3>
+    <p class="temperature_huminity">+20°C; помірно</p>
+    </article>
+    </div>
+
+    </section>
     </main>
     
     <footer>
