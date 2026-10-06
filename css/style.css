@@ -4,20 +4,20 @@
 
 body {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    line-heigt: 1.5;
-    color: #0de51b;
-    background: #389b64;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1F2933;
+    background: #F4F7FB;
 }
 
 header {
-    backgroud: #3a1283;
+    background: #123C69;
     padding: 24px;
-    color: #bec8c3;
+    color: #FFFF;
     display: flex;
     justify-content: space-between;
-    aling-items: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 12px;
 }
@@ -28,8 +28,8 @@ header h1 {
 }
 
 nav a {
-    color: #0ca9d8;
-    margin-rigth: 20;
+    color: #FFFF;
+    margin-right: 20px;
 }
 
 main {
@@ -44,28 +44,61 @@ section{
 }
 
 .weekend_day{
-    padding: 14px;
+    padding: 16px;
     border-radius: 20px;
-    box-shadow: 0 5px 10px #0f1210;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     margin-bottom: 15px;
-    backgroud: #9e1dc9;
+    background: #EAF2F8;
+    color: #1F2933;
 }
 
-.temperature{
-    font-size: 2rem;
+.temperature_huminity{
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
     font-weight: 700;
 }
 
-.footer{
-    front-size: 1rem;
-    padding: 10;
-    color: #7ccb1b;
+.temperature_huminity.warm {
+    color: #9A4D00;
+}
+
+/*
+Теплі температури позначені помаранчевим кольором, який асоціюється з теплом.
+Холодніші температури позначені синім кольором, що асоціюється з прохолодою.
+Такі акцентні кольори допомагають швидше візуально оцінити температуру.
+Це робить погодний дашборд більш зрозумілим для користувача.
+*/
+
+.temperature_huminity.cold {
+    color: #1F5A94;
+}
+
+footer{
+    font-size: 1rem;
+    padding: 16px;
+    color: #FFFF;
+    background: #123C69;
+    text-align: center;
 }
 
 .cards{
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
+}
+
+#current {
+    background: #1F4E79;
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#current-weather {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFD166;
 }
 
 @media (min-width: 600px) {
