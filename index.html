@@ -35,6 +35,18 @@
            </div>
            <section id="forecast">
         <h2>Прогноз на тиждень</h2>
+        <form id= "weather-form">
+            <label for="day">День</label>
+            <input id ="day" name = "day" type = "text" required>
+            <label for="tempC">Температура</label>
+            <input id="tempC" name = "tempC" type = "number" required>
+            <label for="description">Опис</label>
+            <input id="description" name = "description" type = "text">
+            <button type = "submit" Додати></button>
+            <button type = "button" Найтепліший день></button>
+            <button id ="warmest-button" type = "button">Найтепліший день</button>
+            </form>
+        </section>
 
     <div class="cards">
     <article class="weekend_day">
@@ -42,13 +54,7 @@
     <p class="temperature_huminity">+18°C; помірно</p>
     </article>
     </div>
-
-    
-    
         <p id = "avg-temp">Середня температура</p>
-    
-    
-
     </section>
     </main>
     
